@@ -34,8 +34,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc
 
 # Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/t0lte
+PRODUCT_PACKAGES += \
+    tiny_hw
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=SamsungQualcommD2RIL \
+    ro.telephony.ril_class=SamsungQualcommUiccRIL \
     telephony.lteOnGsmDevice=1 \
     mobiledata.interfaces=pdp0,wlan0,gprs,ppp0 \
     ro.ril.hsxpa=1 \
