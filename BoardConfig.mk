@@ -24,6 +24,9 @@
 # GPS
 BOARD_GPS_SET_PRIVACY := true
 
+# Malformed Recovery fix
+RECOVERY_FSTAB_VERSION := 2
+
 # inherit from the proprietary version
 -include vendor/samsung/t0lte/BoardConfigVendor.mk
 
