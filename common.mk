@@ -36,7 +36,8 @@ PRODUCT_PACKAGES += \
 
 # Product specific Packages
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    DeviceSettings \
+    camera.smdk4x12
 
 # NFC
 PRODUCT_PACKAGES += \
