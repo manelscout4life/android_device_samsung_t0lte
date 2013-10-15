@@ -165,4 +165,6 @@
     <!-- Boolean to enable Stylus gestures -->
     <bool name="config_stylusGestures">true</bool>
 
+    <!-- Boolean to enable WiFi mirroring -->
+    <bool name="config_enableWifiDisplay">true</bool>
 </resources>
