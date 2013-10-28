@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
 # Product specific Packages
 PRODUCT_PACKAGES += \
     DeviceSettings \
+    OmniTorch \
     camera.smdk4x12
 
 # NFC
