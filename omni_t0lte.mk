@@ -13,16 +13,16 @@
 # limitations under the License.
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/custom/config/common.mk)
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit AOSP device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := custom_t0lte
+PRODUCT_NAME := omni_t0lte
 PRODUCT_DEVICE := t0lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N7105
